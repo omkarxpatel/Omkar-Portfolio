@@ -280,11 +280,27 @@ span {
 }
 
 .kivy-bar {
-  width: 95%;
+  width: 100%;
 }
 
 .scratch-bar {
   width: 100%;
+}
+
+.mysql-bar {
+  width: 100%;
+}
+
+.ruby-bar {
+  width: 95%;
+}
+
+.php-bar {
+  width: 85%;
+}
+
+.c-bar {
+  width: 80%;
 }
 
 .interests-content {
