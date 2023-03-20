@@ -303,6 +303,10 @@ span {
   width: 80%;
 }
 
+.ardruino-bar {
+  width: 90%;
+}
+
 .interests-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
