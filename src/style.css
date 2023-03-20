@@ -586,5 +586,6 @@ form textarea {
 }
 
 #src {
-  color: white;
+  color: rgb(9, 53, 88);
+  text-decoration: underline;
 }
