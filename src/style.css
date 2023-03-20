@@ -264,19 +264,19 @@ span {
 }
 
 .css-bar {
-  width: 75%;
+  width: 95%;
 }
 
 .html-bar {
-  width: 80%;
-}
-
-.js-bar {
   width: 85%;
 }
 
+.js-bar {
+  width: 75%;
+}
+
 .java-bar {
-  width: 65%;
+  width: 80%;
 }
 
 .kivy-bar {
@@ -563,4 +563,8 @@ form textarea {
   .contact-button {
     margin-left: 25%;
   }
+}
+
+#src {
+  color: white;
 }
