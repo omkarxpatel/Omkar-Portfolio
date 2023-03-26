@@ -591,3 +591,127 @@ form textarea {
   color: rgb(9, 53, 88);
   text-decoration: underline;
 }
+
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #cccccc00;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+}
+
+.timeline-item:hover {
+  background-color: #02225a;
+}
+
+.timeline-item:hover p {
+  color: #8b8a8f;
+}
+
+.timeline-item:hover h3 {
+  color: #fff;
+}
+
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  color: #7B97EE;
+}
+
+.timeline-item:nth-child(odd):before {
+  background-color: #007bff;
+}
+
+.timeline-item:last-child:before {
+  height: 0;
+}
+
+.timeline-item .timeline-content {
+  margin-left: 30px;
+  text-align: center;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.timeline-item .timeline-date {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.timeline-item .timeline-embed {
+  margin-top: 20px;
+}
+
+.timeline-item .timeline-embed iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .timeline-item {
+    width: calc(50% - 20px);
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .timeline-item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+
+  .timeline-item:last-child {
+    margin-right: 0;
+  }
+
+  .timeline-item:before {
+    top: 20px;
+    left: calc(50% - 5px);
+  }
+
+  .timeline-item:nth-child(odd):before {
+    background-color: #007bff00;
+  }
+
+  .timeline-item .timeline-content {
+    margin-left: 30px;
+  }
+  
+  .timeline-item .timeline-embed iframe {
+    height: 400px;
+  }
+}
