@@ -216,6 +216,7 @@ header.shadow {
   margin-left: 1rem;
 }
 
+
 .skills-container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -231,6 +232,7 @@ header.shadow {
   padding: 1rem 0;
   margin-bottom: 1rem;
 }
+
 
 .bars-box h3,
 span {
@@ -268,15 +270,15 @@ span {
 }
 
 .html-bar {
-  width: 85%;
+  width: 95%;
 }
 
 .js-bar {
-  width: 75%;
+  width: 80%;
 }
 
 .java-bar {
-  width: 80%;
+  width: 90%;
 }
 
 .kivy-bar {
@@ -300,7 +302,7 @@ span {
 }
 
 .c-bar {
-  width: 80%;
+  width: 85%;
 }
 
 .ardruino-bar {
