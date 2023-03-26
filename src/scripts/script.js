@@ -1,3 +1,10 @@
+import smoothscroll from 'smoothscroll-polyfill';
+// or if linting/typescript complains
+import * as smoothscroll from 'smoothscroll-polyfill';
+
+// kick off the polyfill!
+smoothscroll.polyfill();
+
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
