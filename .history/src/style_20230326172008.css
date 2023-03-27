@@ -677,7 +677,6 @@ form textarea {
 .timeline-item .timeline-embed iframe {
   width: 100%;
   height: 300px;
-  border-color:#7B97EE;
 }
 
 
@@ -704,7 +703,7 @@ form textarea {
 
   .timeline-item:before {
     top: 20px;
-    left: calc(50% - 5px);
+    left: calc(50% - 50px);
   }
 
   .timeline-item:nth-child(odd):before {
@@ -712,7 +711,7 @@ form textarea {
   }
 
   .timeline-item .timeline-content {
-    margin-left: 0px;
+    margin-left: 30px;
   }
   
   .timeline-item .timeline-embed iframe {
