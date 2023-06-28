@@ -10,9 +10,18 @@
     <title>Portfolio ∙ Omkar Patel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/simple-icons@9.3.0/icons/apacheparquet.svg">
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/typing.js"></script>
+    <script src="scripts/objects.js"></script>
+    <script src="scripts/fill.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 </head>
 
 <body>
+<div id="particles-js"></div>
 <!-- Navbar  Section Start -->
 <header>
     <a href="#" class="logo">Omkar <span> Patel</span>.</a>
@@ -22,10 +31,10 @@
     <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#socials">Socials</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#interests">Interests</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#socials">Socials</a></li>
         <div class="bx bx-sun" id="darkmode"></div>
     </ul>
 </header>
@@ -45,6 +54,10 @@
         <h1>Omkar Patel</h1>
         <h2>‎ </h2>
     </div>
+    <!-- <div class="floating-object floating-object-1"></div>
+    <div class="floating-object floating-object-2"></div>
+    <div class="floating-object floating-object-3"></div> -->
+
 </section>
 <!-- Home Section End -->
 <!-- About Section Start -->
@@ -119,7 +132,6 @@
     </div>
 </section>
 <!-- Skills Section Start -->
-
 <section class="skills" id="skills">
     <div class="heading">
         <h2>Skills</h2>
@@ -130,94 +142,55 @@
         <div class="bars">
 
             <div class="bars-box">
-                <h3><i class="bx bxl-css3"></i> CSS</h3>
+                <h3><i class="bx bxl-css3" style="--percentage: 95%;"></i> CSS</h3>
                 <span>95%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar css-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3><i class="bx bxl-html5"></i> HTML</h3>
+                <h3><i class="bx bxl-html5" style="--percentage: 95%;"></i> HTML</h3>
                 <span>95%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar html-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3><i class="bx bxl-python"></i> Python</h3>
+                <h3><i class="bx bxl-python" style="--percentage: 90%;"></i> Python</h3>
                 <span>90%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar python-bar"></div>
             </div>
 
-           <div class="bars-box">
-                <h3><i class="bx bxl-java"></i> Java</h3>
+            <div class="bars-box">
+                <h3><i class="bx bxl-java" style="--percentage: 90%;"></i> Java</h3>
                 <span>90%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar java-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3><i class="bx bx-cog"></i> Rust</h3>
+                <h3><i class="bx bx-cog" style="--percentage: 85%;"></i> Rust</h3>
                 <span>85%</span>
                 <div class="light-bar"></div>
-                <div class="percent-bar c-bar"></div>
+                <div class="percent-bar rust-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3><i class="bx bxl-postgresql"></i> SQL</h3>
+                <h3><i class="bx bxl-postgresql" style="--percentage: 85%;"></i> SQL</h3>
                 <span>85%</span>
                 <div class="light-bar"></div>
-                <div class="percent-bar php-bar"></div>
+                <div class="percent-bar sql-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3><i class="bx bxl-javascript"></i> JavaScript</h3>
+                <h3><i class="bx bxl-javascript" style="--percentage: 80%;"></i> JavaScript</h3>
                 <span>80%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar js-bar"></div>
             </div>
 
-          <!-- <div class="bars-box">
-                <h3>Kivy</h3>
-                <span>100%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar kivy-bar"></div>
-            </div> -->
-
-            <!-- <div class="bars-box">
-                <h3>Scratch</h3>
-                <span>100%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar scratch-bar"></div>
-            </div> -->
-
-            <!-- <div class="bars-box">
-                <h3>MySQL</h3>
-                <span>100%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar mysql-bar"></div>
-            </div> -->
-
-            <!-- <div class="bars-box">
-                <h3>Ruby</h3>
-                <span>95%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar ruby-bar"></div>
-            </div>
--->
-
-            <!-- <div class="bars-box">
-                <h3>Arduino</h3>
-                <span>90%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar ardruino-bar"></div>
-            </div> -->
-
         </div>
-        <!-- <div class="skills-img">
-            <img src="main.png" alt="Skill">
-        </div> -->
     </div>
 </section>
 
@@ -270,8 +243,8 @@
     <div class="timeline" style="display: flex;">
         <div class="timeline-item" style="margin-right: 20px;">
             <div class="timeline-content">
-                <h3><i class='bx bx-math'></i> Tutoring Math</h3>
-                <p class="timeline-date">July 2022 - September 2022</p>
+                <h3><i class='bx bx-math'></i> Tutoring Math &emsp; | &emsp; <i class='bx bx-code-block'></i> Tutoring Coding</h3>
+                <p class="timeline-date">July 2022 - September 2023</p>
                 <div class="timeline-embed">
                     <iframe title="mt" src="https://mathversetutoring.netlify.app"></iframe>
                 </div>
@@ -284,6 +257,7 @@
                 <p class="timeline-date">March 2023 - Present</p>
                 <div class="timeline-embed">
                     <iframe title="tcs" src="https://www.thecoderschool.com"></iframe>
+                
                     <!-- <iframe title="tcs" src="https://tcs-cupertino.pike13.com/people/9459662-omkar-patel"></iframe> -->
                 </div>
             </div>
@@ -340,8 +314,115 @@
 </div>
 
 <!-- Javascript -->
-<script src="scripts/script.js"></script>
-<script src="scripts/typing.js"></script>
+
+
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800,
+        },
+      },
+      color: {
+        value: "#ffffff",
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 0,
+          color: "#000000",
+        },
+        polygon: {
+          nb_sides: 5,
+        },
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false,
+        },
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse",
+        },
+        onclick: {
+          enable: true,
+          mode: "push",
+        },
+        resize: true,
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 1,
+          },
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3,
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        },
+        push: {
+          particles_nb: 4,
+        },
+        remove: {
+          particles_nb: 2,
+        },
+      },
+    },
+    retina_detect: true,
+  });
+</script>
 
 
 </body>

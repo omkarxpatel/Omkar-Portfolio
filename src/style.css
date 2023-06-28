@@ -36,6 +36,7 @@ body {
   color: var(--text-color);
 }
 
+
 *::selection {
   color: var(--bg-color);
   background: var(--main-color);
@@ -222,9 +223,7 @@ header.shadow {
   align-items: center;
   gap: 2rem;
   margin-top: 4rem;
-}
-
-.bars-box {
+}.bars-box {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -232,7 +231,6 @@ header.shadow {
   padding: 1rem 0;
   margin-bottom: 1rem;
 }
-
 
 .bars-box h3,
 span {
@@ -244,21 +242,36 @@ span {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 0; /* Set initial width to 0 */
   height: 0.5rem;
   background: hsla(260, 100%, 44%, 0.4);
   border-radius: 0.5rem;
-
+  animation: fill 2s ease-in-out forwards; /* Added animation property */
 }
 
 .percent-bar {
   position: absolute;
   bottom: 0;
-  left: 0;  
+  left: 0;
+  width: 0; /* Set initial width to 0 */
   height: 0.5rem;
   background: var(--main-color);
-  border-radius: 0.5rem;  
+  border-radius: 0.5rem;
+  animation: fill 2s ease-in-out forwards; /* Added animation property */
+}
 
+@keyframes fill {
+  from {
+    width: 0; /* Start with width 0 */
+  }
+  to {
+    width: 200; /* Fill up to the assigned width */
+  }
+}
+
+.filled {
+  animation: fill 2s ease-in-out forwards;
+  width: var(--percentage);
 }
 
 .python-bar {
@@ -285,12 +298,12 @@ span {
   width: 100%;
 }
 
-.scratch-bar {
-  width: 100%;
+.rust-bar {
+  width: 85%;
 }
 
-.mysql-bar {
-  width: 100%;
+.sql-bar {
+  width: 85%;
 }
 
 .ruby-bar {
@@ -721,3 +734,60 @@ form textarea {
     height: 400px;
   }
 }
+
+/* Animation for floating objects */
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -20px);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  75% {
+    transform: translate(20px, 0);
+  }
+  100% {
+    transform: translate(-20px, 0);
+  }
+}
+
+.floating-object {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  animation: floating 5s ease-in-out infinite;
+}
+
+.floating-object-1 {
+  top: 30%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-object-2 {
+  top: 70%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.floating-object-3 {
+  top: 50%;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
