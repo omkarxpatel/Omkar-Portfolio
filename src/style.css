@@ -1,4 +1,4 @@
-
+/* 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
@@ -790,4 +790,99 @@ form textarea {
   height: 100%;
   z-index: -1;
 }
+ */
 
+
+.bars-box h3,
+span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.light-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Set initial width to 0 */
+  height: 0.5rem;
+  background: hsla(260, 100%, 44%, 0.4);
+  border-radius: 0.5rem;
+  animation: fill 4s ease-in-out infinite alternate; /* Modified animation property */
+}
+
+.percent-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Set initial width to 0 */
+  height: 0.5rem;
+  background: var(--main-color);
+  border-radius: 0.5rem;
+  animation: fill 4s ease-in-out infinite alternate; /* Modified animation property */
+}
+
+@keyframes fill {
+  0% {
+    width: 0; /* Start with width 0 */
+  }
+  50% {
+    width: 100%; /* Fill up to the assigned width */
+  }
+  100% {
+    width: 0; /* Defill back to 0 */
+  }
+}
+
+.filled {
+  animation: fill 4s ease-in-out infinite alternate;
+  width: var(--percentage);
+}
+
+/* Bar widths for demonstration */
+.python-bar {
+  width: 90%;
+}
+
+.css-bar {
+  width: 95%;
+}
+
+.html-bar {
+  width: 95%;
+}
+
+.js-bar {
+  width: 80%;
+}
+
+.java-bar {
+  width: 90%;
+}
+
+.kivy-bar {
+  width: 100%;
+}
+
+.rust-bar {
+  width: 85%;
+}
+
+.sql-bar {
+  width: 85%;
+}
+
+.ruby-bar {
+  width: 95%;
+}
+
+.php-bar {
+  width: 85%;
+}
+
+.c-bar {
+  width: 85%;
+}
+
+.ardruino-bar {
+  width: 90%;
+}
