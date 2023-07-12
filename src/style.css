@@ -184,13 +184,18 @@ header.shadow {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .about-img img {
   width: 80%;
-  border-radius: 0.5rem;
+  height: calc(100% - 20px);
+  border-radius: 0.5rem 0.5rem 0 0;
+  clip-path: inset(20px 0 0 0);
+  position: relative;
+  top: -20px;
 }
+
 
 .about-text p {
   font-size: var(--p-font);
@@ -295,7 +300,7 @@ span {
 }
 
 .kivy-bar {
-  width: 100%;
+  width: 95%;
 }
 
 .rust-bar {
@@ -322,13 +327,14 @@ span {
   width: 90%;
 }
 
-.interests-content {
+.interests-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
+
 
 .interests-box {
   padding: 20px;
